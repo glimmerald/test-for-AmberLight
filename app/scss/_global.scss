@@ -1,0 +1,43 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Proxima Nova Rg';
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0.1em;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+body {
+    background-color: #202020;
+    color: #ffffff;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    font-style: normal;
+}
+.container{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.program {
+    filter: invert(23%) sepia(3%) saturate(17%) hue-rotate(9deg) brightness(99%) contrast(94%);
+    transition: transform 0.5s;
+
+    &:hover {
+        filter: invert(20%) sepia(81%) saturate(6799%) hue-rotate(254deg) brightness(98%) contrast(106%);
+        transform: scale(1.2);
+    }
+}

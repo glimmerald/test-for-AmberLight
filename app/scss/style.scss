@@ -1,0 +1,157 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+.header {
+    padding-top: 42px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    height: 99px;
+    align-items: center;
+    
+}
+.logo {
+    display: flex;
+    &-text {
+        margin: auto;
+        font-size: 24px;
+        font-family: Roboto;
+        letter-spacing: 0;
+    }
+}
+.header-top__options {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+    li {
+        margin-left: 57px;
+    }
+    a{
+        color: $grey
+    }
+}
+.popup1 {
+    margin-left: 57px;
+    color: $blue;
+ 
+}
+.header-bot {
+    margin-top: 200px;
+    max-width: 1150px;
+    .header-bot__title{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .header-bot__text {
+        font-family: 'Proxima Nova Th';
+        font-weight: 100;
+        font-size: 30px;
+        line-height: 49px;
+        color: $grey;
+        margin-right: 243px;
+    }
+    .header-bot__btn {
+    padding: 18px 78px;
+    background-color: $blue;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 40px;
+    }
+}
+
+.our-stack {
+    margin-top: 100px;
+    .our-stack__title {
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+    .our-stack__programs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1054px;
+        margin: 60px auto 0;
+    }
+}
+.our-team {
+    margin-top: 300px;
+    .our-team__title {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+    .our-team__members{
+        margin: 60px auto 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 130px;
+        grid-row-gap: 50px;
+        .our-team__member {
+            display: flex;
+            img {
+                border-radius: 50%;
+            }
+            .our-team__member-text {
+               margin: auto 0 auto 35px;
+                .our-team__member-name {
+                    line-height: 35px;
+                    font-size: 30px;
+                }
+                .our-team__member-position {
+                    line-height: 28px;
+                    font-size: 24px;
+                    color: $grey;
+                    font-family: 'Proxima Nova Rg';
+                    font-weight: normal;
+                }
+             }
+        }
+    }
+}
+.footer{
+    padding-left: 40px;
+    padding-right: 100px;
+    color: $grey;
+    background-color: #1b1b1b;
+    position: relative;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        .footer-left {
+            align-items: center;
+            display: flex;
+            .footer-menu__list {
+                margin-left: 17px;
+                display: flex;
+                li + li {
+                    margin-left: 57px;
+                }
+                a{
+                    color: $grey;
+                }
+            }
+            .popup2 {
+                margin-left: 57px;
+                color: $grey;
+            }
+        }
+        .footer-center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        .footer-right {
+            margin: auto 0;
+            a + a {
+                padding-left: 50px;
+            }
+        }
+    }
+}
+@import "media";
