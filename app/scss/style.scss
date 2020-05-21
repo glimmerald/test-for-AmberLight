@@ -34,7 +34,7 @@
         color: $grey
     }
 }
-.popup1 {
+.popup-1 {
     margin-left: 57px;
     color: $blue;
  
@@ -76,6 +76,7 @@
         align-items: center;
         max-width: 1054px;
         margin: 60px auto 0;
+        cursor: pointer;
     }
 }
 .our-team {
@@ -83,7 +84,6 @@
     .our-team__title {
         font-size: 48px;
         line-height: 56px;
-        letter-spacing: 0.1em;
         text-align: center;
     }
     .our-team__members{
@@ -136,7 +136,7 @@
                     color: $grey;
                 }
             }
-            .popup2 {
+            .popup-2 {
                 margin-left: 57px;
                 color: $grey;
             }

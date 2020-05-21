@@ -41,3 +41,85 @@ li{
         transform: scale(1.2);
     }
 }
+.popup-content {
+    position: relative;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+.popup {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    margin-top: 50px;
+}
+.popup-contacts-button-message {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.popup-title {
+    line-height: 58px;
+    font-size: 48px;
+}
+.popup-title-text {
+    text-align: center;
+}
+.close {
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+
+}
+.popup-contacts input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px $darker-grey;
+    height: 50px;
+    width: 600px;
+    display: block;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding-top: 40px;
+    line-height: 29px;
+    font-size: 24px;
+    color: $contacts-grey;
+}
+.popup-message textarea {
+    border: none;
+    height: 340px;
+    width: 600px;
+    resize: none;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 29px;
+    font-size: 24px;
+    background-color: $darker-grey;
+}
+.popup-message textarea::placeholder {
+    margin-top: auto;
+    background-color: #202020;
+}
+.popup-contacts input::placeholder,
+.popup-message textarea::placeholder {
+    color: $contacts-grey;
+    line-height: 29px;
+    font-size: 24px;
+    height: 50px;
+    padding: 0px;
+}
+.popup-contacts button {
+    border: none;
+    background-color: #352379;
+    padding: 21px 259px;
+    cursor: pointer;
+    margin-top: 80px;
+    color: #fff;
+    line-height: 37px;
+    font-size: 30px;
+    font-family: 'Proxima Nova Rg';
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}

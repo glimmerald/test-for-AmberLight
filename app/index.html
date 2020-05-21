@@ -9,8 +9,37 @@
 </head>
 
 <body>
+	<div id="mypopup" class="popup">
+		<div class="popup-content">
+			<div class="popup-title">
+				<div class="popup-title-text">Contact Us</div>
+				<span class="close">&times;</span>
+			</div>
+			<div class="popup-contacts-button-message">
+				<div class="popup-contacts-button">
+					<div class="popup-contacts">
+						<form>
+							<input type="text" placeholder="name">
+							<input type="text" placeholder="email">
+							<button type="submit">Send</button>
+						</form>
+					</div>
+				</div>
+				<div class="popup-message">
+					<textarea placeholder="message"></textarea>
+				</div>
+			</div>	
+		</div>
+
+	</div>
+
 	<header class="header">
 		<div class="container">
+
+
+
+
+
 			<div class="header-top">
 				<div class="logo">
 					<a class="logo-img" href="#">
@@ -27,7 +56,7 @@
 						</ul>
 					</nav>
 					<div class="header-top__btn">
-						<a href="#" class="popup1">HIRE US</a>
+						<a id="myBtn" href="#" class="popup-1">HIRE US</a>
 					</div>
 				</div>
 
@@ -141,7 +170,7 @@
 					</ul>
 				</nav>
 				<div class="footer-btn">
-					<a href="#" class="popup2">HIRE US</a>
+					<a id="myBtn" href="#" class="popup-2">HIRE US</a>
 				</div>
 			</div>
 			<div class="footer-center">MAMON LLC © 2018</div>
@@ -163,6 +192,8 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
