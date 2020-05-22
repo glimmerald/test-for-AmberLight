@@ -24,6 +24,8 @@
 }
 .header-top-options {
     display: flex;
+    line-height: 17px;
+    font-size: 14px;
 }
 
 .menu-list {
@@ -118,7 +120,7 @@
 }
 .footer{
     padding-left: 40px;
-    padding-right: 100px;
+    padding-right: 40px;
     color: $grey;
     background-color: #1b1b1b;
     position: relative;
@@ -129,6 +131,8 @@
 }
 .footer-center {
     margin: auto auto;
+    font-size: 14px;
+    line-height: 17px;
 }
 .footer-right {
     margin: auto 0;
@@ -139,10 +143,13 @@
 .footer-left {
     align-items: center;
     display: flex;
+    line-height: 17px;
+    font-size: 14px;
 }
 .footer-menu-list {
     margin-left: 17px;
     display: flex;
+
     li + li {
         margin-left: 57px;
     }
@@ -153,5 +160,8 @@
 .popup-2 {
     margin-left: 57px;
     color: $grey;
+}
+.burger {
+    display: none;
 }
 @import "media";
