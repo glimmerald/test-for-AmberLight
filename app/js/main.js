@@ -10,8 +10,8 @@ let popup = document.getElementById('mypopup'),
         popup.style.display="none";
     };
 
-    window.onclick = function (event) {
-        if(event.target == popup) {
+    window.onclick = function (e) {
+        if(e.target == popup) {
             popup.style.display="none";
         }
     }

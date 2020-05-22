@@ -21,11 +21,11 @@
         letter-spacing: 0;
     }
 }
-.header-top__options {
+.header-top-options {
     display: flex;
 }
 
-.menu__list {
+.menu-list {
     display: flex;
     li {
         margin-left: 57px;
@@ -42,11 +42,11 @@
 .header-bot {
     margin-top: 200px;
     max-width: 1150px;
-    .header-bot__title{
+    .header-bo-title{
         font-size: 48px;
         line-height: 56px;
     }
-    .header-bot__text {
+    .header-bottext {
         font-family: 'Proxima Nova Th';
         font-weight: 100;
         font-size: 30px;
@@ -54,7 +54,7 @@
         color: $grey;
         margin-right: 243px;
     }
-    .header-bot__btn {
+    .header-bot-btn {
     padding: 18px 78px;
     background-color: $blue;
     font-size: 36px;
@@ -65,12 +65,12 @@
 
 .our-stack {
     margin-top: 100px;
-    .our-stack__title {
+    .our-stack-title {
         font-size: 48px;
         line-height: 56px;
         text-align: center;
     }
-    .our-stack__programs {
+    .our-stack-programs {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -81,29 +81,29 @@
 }
 .our-team {
     margin-top: 300px;
-    .our-team__title {
+    .our-team-title {
         font-size: 48px;
         line-height: 56px;
         text-align: center;
     }
-    .our-team__members{
+    .our-team-members{
         margin: 60px auto 0;
         display: grid;
         grid-template-columns: auto auto auto;
         grid-column-gap: 130px;
         grid-row-gap: 50px;
-        .our-team__member {
+        .our-team-member {
             display: flex;
             img {
                 border-radius: 50%;
             }
-            .our-team__member-text {
+            .our-team-member-text {
                margin: auto 0 auto 35px;
-                .our-team__member-name {
+                .our-team-member-name {
                     line-height: 35px;
                     font-size: 30px;
                 }
-                .our-team__member-position {
+                .our-team-member-position {
                     line-height: 28px;
                     font-size: 24px;
                     color: $grey;
@@ -120,13 +120,13 @@
     color: $grey;
     background-color: #1b1b1b;
     position: relative;
-    &__inner {
+    &-inner {
         display: flex;
         justify-content: space-between;
         .footer-left {
             align-items: center;
             display: flex;
-            .footer-menu__list {
+            .footer-menu-list {
                 margin-left: 17px;
                 display: flex;
                 li + li {
