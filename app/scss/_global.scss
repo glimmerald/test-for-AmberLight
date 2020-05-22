@@ -18,6 +18,30 @@ body {
     font-family: 'Proxima Nova Rg';
     font-weight: bold;
     font-style: normal;
+    background-image: url(../images/ourStackBg-1.svg);
+    background-position: 0% 70%;
+    background-repeat: no-repeat;
+
+}
+.ourStackBg-2 {
+    background-image: url(../images/ourStackBg-2.svg);
+    background-position: 56% 73%;
+    background-repeat: no-repeat;
+}
+.ourStackBg-3 {
+    background-image: url(../images/ourStackBg-3.svg);
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+}
+.contactUsBg-2 {
+    background-image: url(../images/contactUsBg-2.svg);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+.popup {
+    background-image: url(../images/contactUsBg-1.svg);
+    background-position: 181% 38%;
+    background-repeat: no-repeat;
 }
 .container{
     max-width: 1600px;
@@ -67,7 +91,7 @@ li{
 }
 .close {
     position: absolute;
-    right: 10%;
+    right: 1.5%;
     cursor: pointer;
 
 }
@@ -97,10 +121,7 @@ li{
     line-height: 29px;
     font-size: 24px;
     background-color: $darker-grey;
-}
-.popup-message textarea::placeholder {
-    margin-top: auto;
-    background-color: #202020;
+    color: $contacts-grey;
 }
 .popup-contacts input::placeholder,
 .popup-message textarea::placeholder {

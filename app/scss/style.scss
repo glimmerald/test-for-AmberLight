@@ -66,6 +66,7 @@
 
 .our-stack {
     margin-top: 100px;
+    
 }
 .our-stack-title {
     font-size: 48px;
@@ -127,14 +128,12 @@
     justify-content: space-between;
 }
 .footer-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    margin: auto auto;
 }
 .footer-right {
     margin: auto 0;
 }
-.footer-rigth a + a {
+.footer-right-social-icons a + a {
     padding-left: 50px;
 }
 .footer-left {
