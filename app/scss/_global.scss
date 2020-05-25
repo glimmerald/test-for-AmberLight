@@ -13,38 +13,28 @@ a {
 }
 
 body {
-    background-color: #202020;
     color: #ffffff;
     font-family: 'Proxima Nova Rg';
     font-weight: bold;
     font-style: normal;
-    background-image: url(../images/ourStackBg-1.svg);
-    background-position: 0% 70%;
-    background-repeat: no-repeat;
+    font: normal bold 'Proxima Nova Rg';
+    background: #202020 url(../images/ourStackBg-1.svg) no-repeat 0% 70%;
 }
 
 .ourStackBg-2 {
-    background-image: url(../images/ourStackBg-2.svg);
-    background-position: 56% 73%;
-    background-repeat: no-repeat;
+    background: url(../images/ourStackBg-2.svg) no-repeat 56% 73%;
 }
 
 .ourStackBg-3 {
-    background-image: url(../images/ourStackBg-3.svg);
-    background-position: 100% 70%;
-    background-repeat: no-repeat;
+    background: url(../images/ourStackBg-3.svg) no-repeat 100% 70%;
 }
 
 .contactUsBg-2 {
-    background-image: url(../images/contactUsBg-2.svg);
-    background-position: 0% 0%;
-    background-repeat: no-repeat;
+    background: url(../images/contactUsBg-2.svg) no-repeat 0% 0%;
 }
 
 .popup {
-    background-image: url(../images/contactUsBg-1.svg);
-    background-position: 181% 38%;
-    background-repeat: no-repeat;
+    background: url(../images/contactUsBg-1.svg) no-repeat 181% 38%;
 }
 
 .container {

@@ -19,8 +19,7 @@
 
 .logo-text {
     margin: auto;
-    font-size: 24px;
-    font-family: Roboto;
+    font: 24px Roboto;
     letter-spacing: 0;
 }
 
@@ -57,10 +56,7 @@
 }
 
 .header-bot-text {
-    font-family: 'Proxima Nova Th';
-    font-weight: 100;
-    font-size: 30px;
-    line-height: 49px;
+    font: 100 30px/49px 'Proxima Nova Th';
     color: $grey;
     margin-right: 243px;
 }
@@ -70,6 +66,7 @@
     background-color: $blue;
     font-size: 36px;
     line-height: 42px;
+    // font: 36px/42px;
     margin-top: 40px;
 }
 
@@ -122,11 +119,8 @@
 }
 
 .our-team-member-position {
-    line-height: 28px;
-    font-size: 24px;
     color: $grey;
-    font-family: 'Proxima Nova Rg';
-    font-weight: normal;
+    font: normal 24px/28px 'Proxima Nova Rg';
 }
 
 .our-team-title {
