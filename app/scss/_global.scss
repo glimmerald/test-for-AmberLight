@@ -17,19 +17,19 @@ body {
     font-family: 'Proxima Nova Rg';
     font-weight: bold;
     font-style: normal;
-    font: normal bold 'Proxima Nova Rg';
-    background: #202020 url(../images/ourStackBg-1.svg) no-repeat 0% 70%;
+    font: normal bold 'Proxima Nova Rg'; //need help
+    background: $background-grey url(../images/ourStackBg-1.svg) no-repeat 0% 70%;
 }
 
-.ourStackBg-2 {
+.our-stack-bg-2 {
     background: url(../images/ourStackBg-2.svg) no-repeat 56% 73%;
 }
 
-.ourStackBg-3 {
+.our-stack-bg-3 {
     background: url(../images/ourStackBg-3.svg) no-repeat 100% 70%;
 }
 
-.contactUsBg-2 {
+.contact-us-bg-2 {
     background: url(../images/contactUsBg-2.svg) no-repeat 0% 0%;
 }
 
@@ -80,7 +80,7 @@ li {
 
 .popup-title {
     line-height: 58px;
-    font-size: 48px;
+    font-size: 48px; //need help
 }
 
 .popup-title-text {
@@ -100,12 +100,9 @@ li {
     height: 50px;
     width: 600px;
     display: block;
-    font-family: 'Proxima Nova Rg';
-    font-weight: bold;
     letter-spacing: 0.1em;
     padding-top: 40px;
-    line-height: 29px;
-    font-size: 24px;
+    font: bold 24px/29px 'Proxima Nova RG';
     color: $contacts-grey;
 }
 
@@ -114,11 +111,8 @@ li {
     height: 340px;
     width: 600px;
     resize: none;
-    font-family: 'Proxima Nova Rg';
-    font-weight: bold;
+    font: bold 24px/29px 'Proxima Nova Rg';
     letter-spacing: 0.1em;
-    line-height: 29px;
-    font-size: 24px;
     background-color: $darker-grey;
     color: $contacts-grey;
 }
@@ -127,20 +121,17 @@ li {
 .popup-message textarea::placeholder {
     color: $contacts-grey;
     line-height: 29px;
-    font-size: 24px;
+    font-size: 24px; // need help
     height: 50px;
 }
 
 .popup-contacts button {
     border: none;
-    background-color: #352379;
+    background-color: $violet;
     padding: 21px 259px;
     cursor: pointer;
     margin-top: 80px;
     color: #fff;
-    line-height: 37px;
-    font-size: 30px;
-    font-family: 'Proxima Nova Rg';
-    font-weight: bold;
+    font: bold 30px/37px 'Proxima Nova Rg';
     letter-spacing: 0.1em;
 }
