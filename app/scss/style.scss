@@ -5,23 +5,25 @@
 .header {
     padding-top: 42px;
 }
+
 .header-top {
     display: flex;
     justify-content: space-between;
     height: 99px;
     align-items: center;
-    
 }
+
 .logo {
     display: flex;
-
 }
+
 .logo-text {
     margin: auto;
     font-size: 24px;
     font-family: Roboto;
     letter-spacing: 0;
 }
+
 .header-top-options {
     display: flex;
     line-height: 17px;
@@ -34,22 +36,26 @@
         margin-left: 57px;
     }
 }
-.menu-list a{
+
+.menu-list a {
     color: $grey;
 }
+
 .popup-1 {
     margin-left: 57px;
     color: $blue;
- 
 }
+
 .header-bot {
     margin-top: 200px;
     max-width: 1150px;
 }
-.header-bot-title{
+
+.header-bot-title {
     font-size: 48px;
     line-height: 56px;
 }
+
 .header-bot-text {
     font-family: 'Proxima Nova Th';
     font-weight: 100;
@@ -58,23 +64,25 @@
     color: $grey;
     margin-right: 243px;
 }
+
 .header-bot-btn {
     padding: 18px 78px;
     background-color: $blue;
     font-size: 36px;
     line-height: 42px;
     margin-top: 40px;
-    }
+}
 
 .our-stack {
     margin-top: 100px;
-    
 }
+
 .our-stack-title {
     font-size: 48px;
     line-height: 56px;
     text-align: center;
 }
+
 .our-stack-programs {
     cursor: pointer;
     display: flex;
@@ -83,29 +91,36 @@
     max-width: 1054px;
     margin: 60px auto 0;
 }
+
 .our-team {
     margin-top: 300px;
 }
-.our-team-members{
+
+.our-team-members {
     margin: 60px auto 0;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 130px;
     grid-row-gap: 50px;
 }
+
 .our-team-member img {
     border-radius: 50%;
 }
+
 .our-team-member {
     display: flex;
 }
+
 .our-team-member-text {
     margin: auto 0 auto 35px;
 }
+
 .our-team-member-name {
     line-height: 35px;
     font-size: 30px;
 }
+
 .our-team-member-position {
     line-height: 28px;
     font-size: 24px;
@@ -113,55 +128,66 @@
     font-family: 'Proxima Nova Rg';
     font-weight: normal;
 }
+
 .our-team-title {
     font-size: 48px;
     line-height: 56px;
     text-align: center;
 }
-.footer{
+
+.footer {
     padding-left: 40px;
     padding-right: 40px;
     color: $grey;
     background-color: #1b1b1b;
     position: relative;
 }
+
 .footer-inner {
     display: flex;
     justify-content: space-between;
 }
+
 .footer-center {
     margin: auto auto;
     font-size: 14px;
     line-height: 17px;
 }
+
 .footer-right {
     margin: auto 0;
 }
-.footer-right-social-icons a + a {
+
+.footer-right-social-icons a+a {
     padding-left: 50px;
 }
+
 .footer-left {
     align-items: center;
     display: flex;
     line-height: 17px;
     font-size: 14px;
 }
+
 .footer-menu-list {
     margin-left: 17px;
     display: flex;
-
-    li + li {
+    li+li {
         margin-left: 57px;
     }
 }
-.footer-menu-list a{
+
+.footer-menu-list a {
     color: $grey;
 }
+
 .popup-2 {
     margin-left: 57px;
     color: $grey;
 }
+
 .burger {
     display: none;
 }
+
 @import "media";

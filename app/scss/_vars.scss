@@ -2,7 +2,6 @@ $grey: #B2B2B2;
 $blue: #5528FF;
 $darker-grey: #1b1b1b;
 $contacts-grey: #3E3E3E;
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -12,7 +11,7 @@ $contacts-grey: #3E3E3E;
     }
 }
 
-@keyframes navLinkFade{
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
@@ -20,6 +19,5 @@ $contacts-grey: #3E3E3E;
     to {
         opacity: 1;
         transform: translateX(0px);
-
     }
 }

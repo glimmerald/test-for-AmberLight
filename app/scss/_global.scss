@@ -1,16 +1,16 @@
-html{
+html {
     box-sizing: border-box;
     font-family: 'Proxima Nova Rg';
     font-weight: normal;
     font-style: normal;
     letter-spacing: 0.1em;
 }
-a{
+
+a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
 }
-
 
 body {
     background-color: #202020;
@@ -21,80 +21,88 @@ body {
     background-image: url(../images/ourStackBg-1.svg);
     background-position: 0% 70%;
     background-repeat: no-repeat;
-
 }
+
 .ourStackBg-2 {
     background-image: url(../images/ourStackBg-2.svg);
     background-position: 56% 73%;
     background-repeat: no-repeat;
 }
+
 .ourStackBg-3 {
     background-image: url(../images/ourStackBg-3.svg);
     background-position: 100% 70%;
     background-repeat: no-repeat;
 }
+
 .contactUsBg-2 {
     background-image: url(../images/contactUsBg-2.svg);
     background-position: 0% 0%;
     background-repeat: no-repeat;
 }
+
 .popup {
     background-image: url(../images/contactUsBg-1.svg);
     background-position: 181% 38%;
     background-repeat: no-repeat;
 }
-.container{
+
+.container {
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
 }
+
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .program {
     filter: invert(23%) sepia(3%) saturate(17%) hue-rotate(9deg) brightness(99%) contrast(94%);
     transition: transform 0.5s;
-
     &:hover {
         filter: invert(20%) sepia(81%) saturate(6799%) hue-rotate(254deg) brightness(98%) contrast(106%);
         transform: scale(1.2);
     }
 }
+
 .popup-content {
     position: relative;
     animation-name: fadeIn;
     animation-duration: 0.4s;
 }
+
 .popup {
     max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
     display: none;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
+
 .popup-contacts-button-message {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
+
 .popup-title {
     line-height: 58px;
     font-size: 48px;
 }
+
 .popup-title-text {
     text-align: center;
 }
+
 .close {
     position: absolute;
     right: 1.5%;
     cursor: pointer;
-
 }
+
 .popup-contacts input {
     background-color: transparent;
     border: none;
@@ -110,6 +118,7 @@ li{
     font-size: 24px;
     color: $contacts-grey;
 }
+
 .popup-message textarea {
     border: none;
     height: 340px;
@@ -123,6 +132,7 @@ li{
     background-color: $darker-grey;
     color: $contacts-grey;
 }
+
 .popup-contacts input::placeholder,
 .popup-message textarea::placeholder {
     color: $contacts-grey;
@@ -130,6 +140,7 @@ li{
     font-size: 24px;
     height: 50px;
 }
+
 .popup-contacts button {
     border: none;
     background-color: #352379;
