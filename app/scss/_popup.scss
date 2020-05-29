@@ -1,0 +1,116 @@
+.popup {
+    background-color: $background-grey;
+    justify-content: space-between;
+    display: none;
+    position: fixed;
+    max-width: 90%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 90%;
+    height: 470px;
+    margin: auto;
+    padding-bottom: 30px;
+    border: 5px solid $violet;
+    @include responsive(1300px) {
+        height: 80%;
+        justify-content: center;
+    }
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s
+}
+
+
+/* Add animation (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.form-popup {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 30px;
+    @include responsive(1300px) {
+        width: calc(100% - 60px);
+    }
+}
+
+.close {
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    right: 29px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.popup-title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: bold;
+    @include responsive(1300px) {
+        height: 100px;
+    }
+}
+
+.form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 3px $darker-grey;
+    padding-top: 40px;
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+}
+
+.popup-message {
+    border: none;
+    resize: none;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 29px;
+    background-color: $darker-grey;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: 300px;
+    width: 40%;
+    margin-right: 30px;
+    @include responsive(1300px) {
+        position: unset;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.form-input::placeholder,
+.popup-message::placeholder {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $contacts-grey;
+}

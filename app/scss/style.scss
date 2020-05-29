@@ -1,173 +1,478 @@
 @import "vars";
-@import "libs";
 @import "fonts";
 @import "global";
-.header {
-    padding-top: 42px;
+@import "mixins";
+@import "popup";
+:focus {
+    outline: none;
 }
 
-.header-top {
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+.header {
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    height: 99px;
     align-items: center;
+    justify-content: space-between;
+    width: 95%;
 }
 
 .logo {
     display: flex;
 }
 
+.clickable-logo {
+    background: url('../images/logo.svg') no-repeat;
+    height: 111px;
+    width: 111px;
+    @include responsive(1400px) {
+        height: 90px;
+        width: 90px;
+    }
+    @include responsive(1000px) {
+        height: 70px;
+        width: 70px;
+    }
+    @include responsive(500px) {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 95%;
+}
+
 .logo-text {
     margin: auto;
     font: 24px Roboto;
     letter-spacing: 0;
-}
-
-.header-top-options {
-    display: flex;
-    line-height: 17px;
-    font-size: 14px;
+    @include responsive(1400px) {
+        font-size: 15px;
+    }
+    @include responsive(500px) {
+        font-size: 10px;
+    }
 }
 
 .menu-list {
     display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    @include responsive(1000px) {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    @include responsive(500px) {
+        font-size: 7px;
+        line-height: 8px;
+    }
     li {
         margin-left: 57px;
+        @include responsive(1000px) {
+            margin-left: 20px;
+        }
+        @include responsive(500px) {
+            margin-left: 5px;
+        }
     }
+}
+
+#nav-blue {
+    color: $blue;
 }
 
 .menu-list a {
     color: $grey;
 }
 
-.popup-1 {
-    margin-left: 57px;
-    color: $blue;
-}
-
-.header-bot {
+.text-block {
     margin-top: 200px;
     max-width: 1150px;
+    @include responsive(1400px) {
+        margin-top: 100px;
+    }
+    @include responsive(1000px) {
+        margin-top: 50px;
+    }
+    @include responsive(500px) {
+        margin-top: 10px;
+    }
 }
 
-.header-bot-title {
+.text-block-title {
     font-size: 48px;
     line-height: 56px;
+    @include responsive(1400px) {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    @include responsive(1000px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    @include responsive(700px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    @include responsive(500px) {
+        font-size: 13px;
+        line-height: 14px;
+    }
 }
 
-.header-bot-text {
-    font: 100 30px/49px 'Proxima Nova Th';
+.text-block-description {
     color: $grey;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 49px;
     margin-right: 243px;
+    max-width: 850px;
+    @include responsive(1400px) {
+        font-size: 25px;
+        line-height: 40px;
+        margin-right: 0;
+    }
+    @include responsive(1000px) {
+        font-size: 17px;
+        line-height: 22px;
+        margin-right: 0;
+        max-width: 500px;
+    }
+    @include responsive(700px) {
+        font-size: 15px;
+        line-height: 17px;
+        margin-right: 0;
+        max-width: 400px;
+    }
+    @include responsive(500px) {
+        font-size: 10px;
+        line-height: 12px;
+        max-width: 250px;
+    }
 }
 
-.header-bot-btn {
+.contact-us-btn {
     padding: 18px 78px;
     background-color: $blue;
     font-size: 36px;
     line-height: 42px;
-    // font: 36px/42px;
+    font-weight: bold;
     margin-top: 40px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    @include responsive(1400px) {
+        padding: 13px 50px;
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 25px;
+    }
+    @include responsive(1000px) {
+        padding: 8px 25px;
+        font-size: 20px;
+        line-height: 22px;
+        margin-top: 19px;
+    }
+    @include responsive(700px) {
+        padding: 5px 18px;
+        font-size: 15px;
+        line-height: 17px;
+        margin-top: 19px;
+    }
+    @include responsive(500px) {
+        padding: 4px 15px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 8px;
+    }
 }
 
 .our-stack {
-    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1054px;
+    margin: 50px auto;
+    @include responsive(1400px) {
+        margin: 20px auto;
+    }
+    @include responsive(1000px) {
+        margin: 10px auto;
+    }
 }
 
 .our-stack-title {
+    flex-basis: 100%;
     font-size: 48px;
     line-height: 56px;
     text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    @include responsive(1400px) {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    @include responsive(1000px) {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    @include responsive(700px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    @include responsive(500px) {
+        font-size: 13px;
+        line-height: 14px;
+    }
 }
 
-.our-stack-programs {
+.program {
+    flex-basis: 16%;
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1054px;
-    margin: 60px auto 0;
+    @include responsive(1000px) {
+        flex-basis: 33%;
+        margin-bottom: 20px;
+        text-align: left;
+        height: 70px;
+        width: 70px;
+    }
+    @include responsive(700px) {
+        flex-basis: 33%;
+        margin-bottom: 15px;
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive(500px) {
+        flex-basis: 33%;
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
 }
 
 .our-team {
-    margin-top: 300px;
-}
-
-.our-team-members {
-    margin: 60px auto 0;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 130px;
-    grid-row-gap: 50px;
+    margin: 300px 0 150px 0;
+    display: flex;
+    flex-flow: row wrap;
+    @include responsive(1400px) {
+        margin: 100px 0 100px 0;
+    }
+    @include responsive(1000px) {
+        margin: 50px 0 30px 0;
+    }
+    @include responsive(700px) {
+        margin: 30px 0 20px 0;
+    }
+    @include responsive(500px) {
+        margin: 20px 0 15px 0;
+    }
 }
 
 .our-team-member img {
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    @include responsive(1400px) {
+        width: 75px;
+        height: 75px;
+        margin-right: 10px;
+    }
+    @include responsive(1000px) {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+    @include responsive(700px) {
+        width: 50px;
+        height: 50px;
+        margin-right: 4px;
+    }
+    @include responsive(500px) {
+        width: 40px;
+        height: 40px;
+        margin-right: 1px;
+    }
 }
 
 .our-team-member {
+    flex-basis: 33%;
+    align-content: flex-start;
     display: flex;
-}
-
-.our-team-member-text {
-    margin: auto 0 auto 35px;
+    height: 100px;
+    width: 300px;
+    flex-flow: column wrap;
+    margin-bottom: 40px;
+    @include responsive(1400px) {
+        width: 100px;
+        height: 75px;
+        margin-bottom: 25px;
+    }
+    @include responsive(1000px) {
+        width: 75px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+    @include responsive(700px) {
+        width: 60px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    @include responsive(500px) {
+        flex-basis: 100%;
+        width: 50px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
 }
 
 .our-team-member-name {
-    line-height: 35px;
     font-size: 30px;
+    line-height: 37px;
+    margin: 15px 0 0 15px;
+    @include responsive(1400px) {
+        font-size: 20px;
+        line-height: 25px;
+        margin: 5px 0 0 5px;
+    }
+    @include responsive(1000px) {
+        font-size: 15px;
+        line-height: 18px;
+        margin: 4px 0 0 4px;
+    }
+    @include responsive(700px) {
+        font-size: 10px;
+        line-height: 12px;
+        margin: 3px 0 0 3px;
+    }
 }
 
 .our-team-member-position {
     color: $grey;
-    font: normal 24px/28px 'Proxima Nova Rg';
+    margin: 0 0 0 15px;
+    font-size: 24px;
+    line-height: 29px;
+    @include responsive(1400px) {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0 0 0 5px;
+    }
+    @include responsive(1000px) {
+        font-size: 12px;
+        line-height: 13px;
+        margin: 0 0 0 4px;
+    }
+    @include responsive(700px) {
+        font-size: 9px;
+        line-height: 10px;
+        margin: 0 0 0 3px;
+    }
 }
 
 .our-team-title {
+    flex-basis: 100%;
     font-size: 48px;
     line-height: 56px;
     text-align: center;
+    margin-bottom: 90px;
+    font-weight: bold;
+    @include responsive(1400px) {
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 40px;
+    }
+    @include responsive(1000px) {
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 15px;
+    }
+    @include responsive(700px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    @include responsive(500px) {
+        font-size: 13px;
+        line-height: 14px;
+    }
 }
 
 .footer {
-    padding-left: 40px;
-    padding-right: 40px;
-    color: $grey;
-    background-color: $darker-grey;
-    position: relative;
-}
-
-.footer-inner {
     display: flex;
     justify-content: space-between;
-}
-
-.footer-center {
-    margin: auto auto;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.footer-right {
-    margin: auto 0;
-}
-
-.footer-right-social-icons a+a {
-    padding-left: 50px;
-}
-
-.footer-left {
+    color: $grey;
+    background-color: $darker-grey;
     align-items: center;
+}
+
+.footer-logo-nav {
     display: flex;
-    line-height: 17px;
+    align-items: center;
+}
+
+.footer-sign {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     font-size: 14px;
+    line-height: 17px;
+    @include responsive(1400px) {
+        font-size: 13px;
+    }
+    @include responsive(1000px) {
+        font-size: 8px;
+    }
+    @include responsive(700px) {
+        font-size: 7px;
+        left: 38px;
+    }
+    @include responsive(500px) {
+        left: 0px;
+        font-size: 6px;
+    }
 }
 
 .footer-menu-list {
-    margin-left: 17px;
     display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    @include responsive(1400px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    @include responsive(1000px) {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    @include responsive(1000px) {
+        font-size: 6px;
+        line-height: 7px;
+    }
+    @include responsive(500px) {
+        display: none;
+    }
     li+li {
         margin-left: 57px;
+        @include responsive(1400px) {
+            margin-left: 15px;
+        }
+        @include responsive(1000px) {
+            margin-left: 10px;
+        }
+        @include responsive(700px) {
+            margin-left: 3px;
+        }
     }
 }
 
@@ -175,13 +480,78 @@
     color: $grey;
 }
 
-.popup-2 {
-    margin-left: 57px;
-    color: $grey;
+.social-icon {
+    @include responsive(1000px) {
+        height: 15px;
+        width: 15px;
+    }
+    @include responsive(500px) {
+        height: 10px;
+        width: 10px;
+    }
 }
 
-.burger {
-    display: none;
+.footer-social {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    @include responsive(1400px) {
+        margin-right: 20px;
+    }
+    @include responsive(1000px) {
+        margin-right: 10px;
+    }
+    a+a {
+        margin-left: 39px;
+        @include responsive(1400px) {
+            margin-left: 25px;
+        }
+        @include responsive(1000px) {
+            margin-left: 15px;
+        }
+        @include responsive(500px) {
+            margin-left: 8px;
+        }
+    }
 }
 
-@import "media";
+.contact-us-button {
+    border: none;
+    background-color: $violet;
+    cursor: pointer;
+    margin-top: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    width: inherit;
+    height: 90px;
+}
+
+.popup-message {
+    border: none;
+    resize: none;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 29px;
+    background-color: $darker-grey;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: 300px;
+    width: 40%;
+    margin-right: 30px;
+    @include responsive(1300px) {
+        position: unset;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.form-input::placeholder,
+.popup-message::placeholder {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $contacts-grey;
+}

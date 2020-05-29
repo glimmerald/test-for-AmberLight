@@ -1,9 +1,16 @@
+@import "mixins";
+body,
+textarea,
+button,
+input {
+    font-family: 'Proxima Nova';
+    letter-spacing: 0.1em;
+}
+
 html {
     box-sizing: border-box;
-    font-family: 'Proxima Nova Rg';
     font-weight: normal;
     font-style: normal;
-    letter-spacing: 0.1em;
 }
 
 a {
@@ -14,34 +21,15 @@ a {
 
 body {
     color: #ffffff;
-    font-family: 'Proxima Nova Rg';
-    font-weight: bold;
-    font-style: normal;
-    font: normal bold 'Proxima Nova Rg'; //need help
     background: $background-grey url(../images/ourStackBg-1.svg) no-repeat 0% 70%;
-}
-
-.our-stack-bg-2 {
-    background: url(../images/ourStackBg-2.svg) no-repeat 56% 73%;
-}
-
-.our-stack-bg-3 {
-    background: url(../images/ourStackBg-3.svg) no-repeat 100% 70%;
-}
-
-.contact-us-bg-2 {
-    background: url(../images/contactUsBg-2.svg) no-repeat 0% 0%;
-}
-
-.popup {
-    background: url(../images/contactUsBg-1.svg) no-repeat 181% 38%;
+    @include responsive(700px) {
+        background-image: none;
+    }
 }
 
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 ul,
@@ -58,80 +46,4 @@ li {
         filter: invert(20%) sepia(81%) saturate(6799%) hue-rotate(254deg) brightness(98%) contrast(106%);
         transform: scale(1.2);
     }
-}
-
-.popup-content {
-    position: relative;
-    animation-name: fadeIn;
-    animation-duration: 0.4s;
-}
-
-.popup {
-    max-width: 1500px;
-    display: none;
-    margin: 50px auto 0;
-}
-
-.popup-contacts-button-message {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-
-.popup-title {
-    line-height: 58px;
-    font-size: 48px; //need help
-}
-
-.popup-title-text {
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    right: 1.5%;
-    cursor: pointer;
-}
-
-.popup-contacts input {
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 3px $darker-grey;
-    height: 50px;
-    width: 600px;
-    display: block;
-    letter-spacing: 0.1em;
-    padding-top: 40px;
-    font: bold 24px/29px 'Proxima Nova RG';
-    color: $contacts-grey;
-}
-
-.popup-message textarea {
-    border: none;
-    height: 340px;
-    width: 600px;
-    resize: none;
-    font: bold 24px/29px 'Proxima Nova Rg';
-    letter-spacing: 0.1em;
-    background-color: $darker-grey;
-    color: $contacts-grey;
-}
-
-.popup-contacts input::placeholder,
-.popup-message textarea::placeholder {
-    color: $contacts-grey;
-    line-height: 29px;
-    font-size: 24px; // need help
-    height: 50px;
-}
-
-.popup-contacts button {
-    border: none;
-    background-color: $violet;
-    padding: 21px 259px;
-    cursor: pointer;
-    margin-top: 80px;
-    color: #fff;
-    font: bold 30px/37px 'Proxima Nova Rg';
-    letter-spacing: 0.1em;
 }

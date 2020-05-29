@@ -1,0 +1,6 @@
+ // recommended values: 1400px, 1000px, 700px.
+ @mixin responsive ($screen-width) {
+     @media screen and (max-width: $screen-width) {
+         @content;
+     }
+ }

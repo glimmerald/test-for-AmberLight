@@ -9,199 +9,129 @@
 </head>
 
 <body>
-    <div class=".our-stack-bg-2">
-        <div class=".our-stack-bg-3">
-            <div id="mypopup" class="popup">
-                <div class="contact-us-bg-2">
-                    <div class="popup-content">
-                        <div class="popup-title">
-                            <div class="popup-title-text">Contact Us</div>
-                            <span class="close">&times;</span>
-                        </div>
-                        <div class="popup-contacts-button-message">
-                            <div class="popup-contacts-button">
-                                <div class="popup-contacts">
-                                    <form>
-                                        <input type="text" placeholder="name">
-                                        <input type="email" placeholder="email">
-                                        <button type="submit">Send</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="popup-message">
-                                <textarea placeholder="message"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="#" class="clickable-logo"></a>
+                <h1 class="logo-text">mamon</h1>
             </div>
 
-            <header class="header">
-                <div class="container">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="#">WORK</a>
+                    </li>
+                    <li>
+                        <a href="#">COMPANY</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACTS</a>
+                    </li>
+                    <li>
+                        <a id="nav-blue" href="#">HIRE US</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
+            <section class="text-block">
+                <h2 class="text-block-title">We're an independent development agency.</h2>
+                <p class="text-block-description">We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences.</p>
 
+            </section>
+            <button class="contact-us-btn" id="myBtn" onclick="myFunction()">Contact Us</button>
 
-
-
-                    <div class="header-top">
-                        <div class="logo">
-                            <a class="logo-img" href="#">
-                                <img src="images/logo.svg " alt="">
-                            </a>
-                            <div class="logo-text">mamon</div>
-                        </div>
-                        <div class="header-top-options">
-                            <nav class="menu">
-                                <ul class="menu-list">
-                                    <li><a href="#">WORK</a></li>
-                                    <li><a href="#">COMPANY</a></li>
-                                    <li><a href="#">CONTACTS</a></li>
-                                </ul>
-                                <div class="burger">
-                                    <div class="line1"></div>
-                                    <div class="line2"></div>
-                                    <div class="line3"></div>
-                                </div>
-                            </nav>
-                            <div class="header-topbtn">
-                                <a id="myBtn" href="#" class="popup-1">HIRE US</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="header-bot">
-                        <h3 class="header-bot-title">
-                            We're an independent development agency.
-                        </h3>
-                        <div class="header-bot-text">
-                            We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences.
-                        </div>
-                        <a href="#" class="header-bot-btn">
-							Contact Us
-						</a>
-                    </div>
-
-                </div>
-            </header>
             <section class="our-stack">
-                <div class="container">
-                    <div class="our-stack-title">Our stack</div>
-                    <div class="our-stack-programs">
-                        <img class="program" src="images/node.svg" alt="">
-                        <img class="program" src="images/js.svg" alt="">
-                        <img class="program" src="images/angelar.svg" alt="">
-                        <img class="program" src="images/react.svg" alt="">
-                        <img class="program" src="images/php.svg" alt="">
-                        <img class="program" src="images/html.svg" alt="">
-                    </div>
-                </div>
+                <h2 class="our-stack-title">Our stack</h2>
+                <img class="program" src="images/node.svg" alt="">
+                <img class="program" src="images/js.svg" alt="">
+                <img class="program" src="images/angelar.svg" alt="">
+                <img class="program" src="images/react.svg" alt="">
+                <img class="program" src="images/php.svg" alt="">
+                <img class="program" src="images/html.svg" alt="">
             </section>
             <section class="our-team">
-                <div class="container">
-                    <div class="our-team-title">Our team</div>
-                    <div class="our-team-members">
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/vadim.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Vadim</div>
-                                <div class="our-team-member-position">Managing Director</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/sergey_loysha.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Sergey</div>
-                                <div class="our-team-member-position">Technology Director</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/andrey_pitunov.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Nikita</div>
-                                <div class="our-team-member-position">Front-end Developer</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/alex_tukaylo.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Alex</div>
-                                <div class="our-team-member-position">Front-end Developer</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/dmitry_shindin.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Dmitry</div>
-                                <div class="our-team-member-position">Back-end Developer</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member">
-                            <div class="our-team-member-img">
-                                <img src="images/tomash_svorobovich.jpg" alt="">
-                            </div>
-                            <div class="our-team-member-text">
-                                <div class="our-team-member-name">Tom</div>
-                                <div class="our-team-member-position">Product Designer</div>
-                            </div>
-                        </div>
-                        <div class="our-team-member"></div>
-                        <div class="our-team-member"></div>
-                        <div class="our-team-member"></div>
-                        <div class="our-team-member"></div>
-                        <div class="our-team-member"></div>
-                    </div>
+                <h2 class="our-team-title">Our team</h2>
+                <div class="our-team-member">
+                    <img src="images/vadim.jpg" alt="">
+                    <h3 class="our-team-member-name">Vadim</h3>
+                    <p class="our-team-member-position">Managing Director
+                    </p>
+                </div>
+                <div class="our-team-member">
+                    <img src="images/sergey_loysha.jpg" alt="">
+                    <h3 class="our-team-member-name">Sergey</h3>
+                    <p class="our-team-member-position">Technology Director
+                    </p>
+                </div>
+                <div class="our-team-member">
+                    <img src="images/andrey_pitunov.jpg" alt="">
+                    <h3 class="our-team-member-name">Nikita</h3>
+                    <p class="our-team-member-position">Front-end Developer
+                    </p>
+                </div>
+                <div class="our-team-member">
+                    <img src="images/alex_tukaylo.jpg" alt="">
+                    <h3 class="our-team-member-name">Alex</h3>
+                    <p class="our-team-member-position">Front-end Developer
+                    </p>
+                </div>
+                <div class="our-team-member">
+                    <img src="images/dmitry_shindin.jpg" alt="">
+                    <h3 class="our-team-member-name">Dmitry</h3>
+                    <p class="our-team-member-position">Back-end Developer
+                    </p>
+                </div>
+                <div class="our-team-member">
+                    <img src="images/tomash_svorobovich.jpg" alt="">
+                    <h3 class="our-team-member-name">Tom</h3>
+                    <p class="our-team-member-position">Product Designer
+                    </p>
                 </div>
             </section>
-            <footer class="footer">
-                <div class="footer-inner">
-                    <div class="footer-left">
-                        <div class="footer-left-logo">
-                            <img src="images/logo.svg" alt="">
-                        </div>
-                        <nav class="footer-menu">
-                            <ul class="footer-menu-list">
-                                <li><a href="#">WORK</a></li>
-                                <li><a href="#">COMPANY</a></li>
-                                <li><a href="#">CONTACTS</a></li>
-                            </ul>
-                        </nav>
-                        <div class="footer-btn">
-                            <a id="myBtn" href="#" class="popup-2">HIRE US</a>
-                        </div>
-                    </div>
-                    <div class="footer-center">MAMON LLC © 2018</div>
-                    <div class="footer-right">
-                        <div class="footer-right-social-icons">
-                            <a href="#">
-                                <img src="images/cat.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="images/be.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="images/in.svg" alt="">
-                            </a>
-                            <a href="#">
-                                <img src="images/cube.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
+
+        </main>
     </div>
-    <script src="js/libs.min.js"></script>
+    <footer class="footer">
+        <div class="footer-logo-nav">
+            <a href="#" class="clickable-logo"></a>
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">COMPANY</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                    <li><a href="#">HIRE US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <small class="footer-sign">MAMON LLC © 2018</small>
+        <ul class="footer-social">
+            <a href="#">
+                <img class="social-icon" src="images/cat.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="social-icon" src="images/be.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="social-icon" src="images/in.svg" alt="">
+            </a>
+            <a href="#">
+                <img class="social-icon" src="images/cube.svg" alt="">
+            </a>
+        </ul>
+    </footer>
+
+    <div class="popup" id="myPopup">
+        <h2 class="popup-title">Contact Us</h2>
+        <span class="close">&times;</span>
+        <form class="form-popup">
+            <input class="form-input" type="text" placeholder="name">
+            <input class="form-input" type="email" placeholder="email">
+            <textarea class="popup-message" placeholder="message"></textarea>
+            <button class="contact-us-button" type="submit">Send</button>
+        </form>
+    </div>
     <script src="js/main.js"></script>
 </body>
 
